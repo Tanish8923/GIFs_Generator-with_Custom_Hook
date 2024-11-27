@@ -23,7 +23,8 @@ const useGif = (tag) => {
 
     useEffect(() => {
         fetchData()
-    } ,[]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[]);
 
     return{gif , Loading , fetchData}
 }
